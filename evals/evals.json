@@ -1,0 +1,17 @@
+{
+  "skill_name": "insight-capture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "오늘 Jekyll 빌드가 GitHub Actions에서 계속 실패해서 두 시간 동안 삽질했어. `remote_theme`를 `cotes2020/jekyll-theme-chirpy`로 설정했는데 bundle exec jekyll build가 로컬에서는 되는데 CI에서만 안 되더라고. 알고 보니 `JEKYLL_ENV=production` 환경변수가 없어서 그랬어. 이거 블로그에 정리해줘.",
+      "expected_output": "Jekyll CI 버그 해결 과정을 담은 problem-solution 패턴의 마크다운 블로그 포스트. front matter에 title과 date 포함.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Spring에서 SSE(Server-Sent Events) 구현할 때 `SseEmitter` 기본 timeout이 30초라서 클라이언트 연결이 자꾸 끊겼어. `new SseEmitter(0L)` 로 설정하면 timeout 없애는 건데 오늘에서야 알았어. 짧게 팁 포스트로 만들어줘.",
+      "expected_output": "Spring SseEmitter timeout 팁을 담은 tips 패턴의 마크다운 블로그 포스트. front matter에 title과 date 포함.",
+      "files": []
+    }
+  ]
+}
