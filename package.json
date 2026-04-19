@@ -1,0 +1,50 @@
+{
+  "name": "@xmoonanx/insight-capture",
+  "version": "0.1.0-alpha.0",
+  "description": "Capture development insights and convert them into Jekyll-ready blog posts for Claude Code and Codex CLI.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "bin": {
+    "insight-install": "./bin/insight-install.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "postinstall": "node ./bin/insight-install.js --from-postinstall",
+    "preuninstall": "node ./bin/insight-install.js --uninstall"
+  },
+  "files": [
+    "SKILL.md",
+    "agents/",
+    "assets/",
+    "bin/",
+    "references/",
+    "scripts/",
+    "src/"
+  ],
+  "keywords": [
+    "jekyll",
+    "claude-code",
+    "codex",
+    "agent-skills",
+    "blog"
+  ],
+  "author": "xmoonanx",
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.8.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
