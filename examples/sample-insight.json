@@ -1,0 +1,12 @@
+{
+  "id": "sample-1",
+  "title": "Fixing a flaky build",
+  "description": "A short write-up about stabilizing CI.",
+  "pattern": "problem-solution",
+  "summary": "Why the build failed intermittently.",
+  "body": "## Problem\n\nBuilds were flaky.\n\n## Solution\n\nWe stabilized the environment.",
+  "tags": ["ci", "build"],
+  "categories": ["Engineering", "CI"],
+  "date": "2026-04-19",
+  "lang": "en"
+}
