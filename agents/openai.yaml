@@ -1,0 +1,5 @@
+interface:
+  display_name: "Insight Capture"
+  short_description: "Convert development insights to Jekyll blog posts"
+policy:
+  allow_implicit_invocation: true
